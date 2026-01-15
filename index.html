@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikura's Plush Store</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="store.js" async ></script>
+
+</head>
+<body>
+  <header class="navbar">
+    <div class="overlay">
+        <nav class="nav-content">
+            <div class="logo">Ikura's Plush Store</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Honkai Star Rail.html">Honkai Star Rail</a></li>
+                <li><a href="Zenless Zone Zero.html">Zenless Zone Zero</a></li>
+                <li><a href="Genshin Impact.html">Genshin Impact</a></li>
+            </ul>
+            <button id="cart-btn" class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+        </nav>
+
+        <div class="hero-text">
+            <h1>Your one stop shop for your favorite hoyoverse plushies</h1>
+        </div>
+    </div>
+  </header>
+
+<h1>Welcome to Ikura's Plush Store</h1>
+
+    <h2>Featured Items</h2>
+    <div class="top-bar">
+      <div class="count">12 products</div>
+    </div>
+    
+    <div class="product-grid">
+
+        <div class="card">
+            <img src="IMAGE FOR CODING/GI-Smol furina.jpg" alt="Mini Furina" title="Furina sitting plush doll">
+            <h2>Mini Furina</h2>
+            <p class="price">₱ 1100 </p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="IMAGE FOR CODING/HSR-Numby Plush.jpg" alt="Numby plush pendant" title="Numby plush pendant">
+            <h2>Numby Plush Pendant</h2>
+             <p class="price">₱ 900</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <span class="sale">Sale</span>
+            <img src="IMAGE FOR CODING/GI-Citlali-Plush-Pillow.jpg" alt="Citlali Plush Pillow" title="Citlali Plush Pillow">
+            <h2>Citlali Plush Pillow</h2>
+            <p class="price">
+                <span class="old">₱ 1500</span> ₱ 1000
+            </p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="IMAGE FOR CODING/HSR-Little Ica plush.jpg" alt="Little Ica Plush" title="Little Ica Plush">
+            <h2>Little Ica Plush</h2>
+            <p class="price">₱ 800</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="IMAGE FOR CODING/ZZZ-bangboo1.jpg" alt="Bangboo Plush" title="Bangboo Plush">
+            <h2>Bangboo Plush</h2>
+            <p class="price">₱ 800</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="IMAGE FOR CODING/ZZZ-bangboo-hangable-plushie.jpg" alt="Bangboo Plush" title="Bangboo Plush">
+            <h2>Bangboo Plush</h2>
+            <p class="price">₱ 800</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="IMAGE FOR CODING/GI-Mizuki-baku-Plush.jpg" alt="Mizuki-baku-Plush" title="Mizuki-baku-Plush">
+            <h2>Mizuki-baku Plush</h2>
+            <p class="price">₱ 600</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <span class="sale">Sale</span>
+            <img src="IMAGE FOR CODING/GI-Surintendante-Chevalmari.jpg" alt="Surintendante-Chevalmari" title="Surintendante-Chevalmari Plush">
+            <h2>Surintendante-Chevalmari Plush</h2>
+            <p class="price">
+                <span class="old">₱ 600</span> ₱ 400
+            </p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="IMAGE FOR CODING/HSR-Sparkle plush.jpg" alt="Sparkle Plush" title="Sparkle Plush">
+            <h2>Sparkle Plush</h2>
+            <p class="price">₱ 800</p>
+            <button>Add to cart</button>
+        </div>
+        
+        <div class="card">
+            <span class="sale">Sale</span>
+            <img src="IMAGE FOR CODING/GI-otter plush.jpg" alt="Otter Plush" title="Otter Plush">
+            <h2>Otter Plush</h2>
+            <p class="price">
+                <span class="old">₱ 1,000</span> ₱ 650
+            </p>
+            <button>Add to cart</button>
+        </div>
+        
+        <div class="card">
+            <span class="sale">Sale</span>
+            <img src="IMAGE FOR CODING/HSR-Tribbie.jpg" alt="Tribbie Plush" title="Tribbie Plush">
+            <h2>Tribbie Plush</h2>
+            <p class="price">
+                <span class="old">₱ 900</span> ₱ 700
+            </p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <span class="sale">Sale</span>
+            <img src="IMAGE FOR CODING/ZZZ-sheepboo.jpg" alt="Sheepboo Plush" title="Sheepboo Plush">
+            <h2>Sheepboo Plush</h2>
+            <p class="price">
+                <span class="old">₱ 800</span> ₱ 600
+            </p>
+            <button>Add to cart</button>
+        </div>
+    </div>
+
+<!-- Cart Sidebar -->
+<div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h3>Shopping Cart</h3>
+        <button class="close-btn" id="close-cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+        <!-- Cart items will be dynamically added here -->
+    </div>
+    <div class="cart-footer">
+        <p>Total: ₱<span id="cart-total">0</span></p>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Location -->
+    <div class="footer-item">
+      <h3>Location</h3>
+      <p>32 A Saint Joseph St. Brgy Holy Spirit Quezon City</p>
+    </div>
+
+    <!-- Contact Number -->
+    <div class="footer-item">
+      <h3>Contact Number</h3>
+      <p>+63 961 876 1531
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-item">
+      <h3>Social Media</h3>
+      <div class="social-icons">
+        <!-- Facebook (Direct Message) -->
+        <a href="https://www.facebook.com/share/182ERHa3uB/" target="_blank">
+          <img src="IMAGE FOR CODING/FB ICON.jpg" alt="Facebook">
+        </a>
+
+        </div>
+
+  </div>
+</footer>
+
+
+<script>
+document.querySelectorAll('nav a').forEach(function(a){
+  var href = a.getAttribute('href').split('/').pop();
+  var current = location.pathname.split('/').pop() || 'index.html';
+  if (href === current) { a.classList.add('active'); }
+});
+</script>
+  
+
+
+
+
+
+
+
+</main>
+</body>
+</html>
+ 

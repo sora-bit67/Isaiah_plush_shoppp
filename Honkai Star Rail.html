@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikura's Plush Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="store.js" async ></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="overlay">
+        <nav class="nav-content">
+            <div class="logo">Ikura's Plush Store</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Honkai Star Rail.html">Honkai Star Rail</a></li>
+                <li><a href="Zenless Zone Zero.html">Zenless Zone Zero</a></li>
+                <li><a href="Genshin Impact.html">Genshin Impact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-text">
+            <h1>Explore our Honkai Star Rail plush collection!</h1>
+        </div>
+    </div>
+  </header>
+
+  <main class="site-inner">
+    <h1>Honkai Star Rail Plushies</h1>
+
+    <h2>Featured Items</h2>
+    <div class="top-bar">
+      <div class="count">4 products</div>
+    </div>
+    
+    <div class="product-grid">
+
+        <div class="card">
+            <span class="sale">Sale</span>
+            <img src="IMAGE FOR CODING/HSR-Tribbie.jpg" alt="Tribbie Plush" title="Tribbie Plush">
+            <h2>Tribbie Plush</h2>
+            <p class="price">
+                <span class="old">₱ 900</span> ₱ 700
+            </p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="IMAGE FOR CODING/HSR-Sparkle plush.jpg" alt="Sparkle Plush" title="Sparkle Plush">
+            <h2>Sparkle Plush</h2>
+            <p class="price">₱ 800</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="IMAGE FOR CODING/HSR-Numby Plush.jpg" alt="Numby Plush" title="Numby Plush">
+            <h2>Numby Plush</h2>
+            <p class="price">₱ 900</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="card">
+            <img src="IMAGE FOR CODING/HSR-Little Ica plush.jpg" alt="Little Ica Plush" title="Little Ica Plush">
+            <h2>Little Ica Plush</h2>
+            <p class="price">₱ 800</p>
+            <button>Add to cart</button>
+        </div>
+
+    </div>
+
+  </main>
+
+<script>
+document.querySelectorAll('nav a').forEach(function(a){
+  var href = a.getAttribute('href').split('/').pop();
+  var current = location.pathname.split('/').pop() || 'index.html';
+  if (href === current) { a.classList.add('active'); }
+});
+</script>
+</body>
+</html>
